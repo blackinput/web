@@ -1,0 +1,186 @@
+<!--Emmanuel Hernandez Celis PUE | MX-->
+<!--emmacelis93@gmail.com-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Black Input | Soluciones Web </title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Cargando fuentes-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <!-- Cargando iconos -->
+    <link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <!-- Carga de archivos css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="scss/estilos.css">
+</head>
+
+<body class="paginas-internas">
+
+
+
+    <section class="bienvenidos-index ">
+
+        <header class="encabezado navbar-fixed-top" role="banner" id="encabezado">
+            <div class="container">
+                <a href="index.html">
+                    <h2>BLACK INPUT</h2>
+                </a>
+                <button type="button" class="boton-menu hidden-md-up" data-toggle="collapse"
+                    data-target="#menu-principal" aria-expanded="false">
+                    <i class="fa fa-bars" aria-hidden="true"></i></button>
+                <nav id="menu-principal" class="collapse">
+                    <ul>
+                        <li><a href="index.html">Inicio </a></li>
+                        <!-- <li><a href="servicios.html">Nosotros </a></li> -->
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+
+        <div class="texto-encabezado text-xs-center">
+            <div class="container">
+                <p class="parrafo ">Diseño Web | Aplicaciones Moviles</p>
+                <h1 class="display-4  font-weight-bold ">
+                    <span></span>BLACK INPUT
+                </h1>
+                <p class="parrafo1 ">MEX | PUE</p>
+
+                <div class="buttos  ">
+                    <button id="one"><a href="./servicios.html" id="retrasar"> I n g r e s a r</a></button>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+        <!-- <div class="flecha-bajar text-xs-center">
+            <a data-scroll href="#servicios1"> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div> -->
+
+        <!-- <div class="medi  hidden-xs-down">
+            <ul>
+                <li> <ion-icon class="fa fa-facebook"></ion-icon></li>
+                <li><ion-icon class="fa fa-instagram"></ion-icon></li>
+                <li> <ion-icon class="fa fa-twitter"></ion-icon></li>
+                <li> <ion-icon class="fa fa-youtube"></ion-icon></li>
+            </ul>
+        </div> -->
+
+
+        <div class="imagen  hidden-md-down">
+            <!-- <img src="./images/edificio.svg"  alt="edificio"> -->
+            <object data="./images/edificio.svg" type="image/svg+xml"></object>
+        </div>
+
+        <div class="imagen2  hidden-md-down">
+            <img src="./images/png.png" alt="imagen2">
+            </di>
+
+
+    </section>
+
+
+
+
+    <!-- <div class="cursor" id="cursor"></div>
+    <div class="cursor2" id="cursor3"></div>
+    <div class="cursor3" id="cursor2"></div> -->
+
+
+
+
+
+
+    <footer class="piedepagina p-y-1" role="contentinfo">
+        <div class="container">
+            <p>2019 © BLACKINPUT Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Carga de archivos  JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/sitio.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById('retrasar').onclick = function () {
+            var www = this.href;
+            var f = function () {
+                window.location.href = www
+            };
+            setTimeout(f, 2000);
+            return false;
+        }
+    </script>
+
+    <script>
+        document.getElementById('one').addEventListener('click', function () {
+
+            TweenMax.to(".imagen2", .5, {
+                delay: .3,
+                left: '-100%',
+                ease: Expo.easeInOut
+            });
+            TweenMax.to(".imagen", .5, {
+                x: .7,
+                left: '100%',
+                ease: Expo.easeInOut
+            });
+            TweenMax.to(".texto-encabezado", .5, {
+                delay: 1.2,
+                y: '100%',
+                ease: Expo.easeInOut
+            });
+            TweenMax.to(".encabezado", .2, {
+                delay: 1.5,
+                y: '-100%',
+                ease: Expo.easeInOut
+            });
+        });
+    </script>
+    <script>
+        const tl = new TimelineMax();
+        tl.to(".imagen2", 1.5, {
+            x: '0%',
+            ease: Power2.easeInOut
+        });
+        tl.to(".imagen", .01, {
+            x: '-.7%',
+            ease: Power2.easeInOut
+        });
+        tl.to(".encabezado", 1.5, {
+            x: '0%',
+            ease: Power2.easeInOut
+        });
+        tl.to(".texto-encabezado", 1.5, {
+            x: '0%',
+            ease: Power2.easeInOut
+        });
+    </script>
+
+
+</body>
+
+</html>
